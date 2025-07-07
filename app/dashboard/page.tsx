@@ -12,7 +12,6 @@ import {
   LogOut,
   Menu,
   X,
-  ExternalLink,
   Edit3,
   Eye
 } from 'lucide-react'

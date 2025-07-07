@@ -32,7 +32,7 @@ export default function SignupPage() {
       setTimeout(() => {
         router.push('/dashboard')
       }, 1000)
-    } catch (err) {
+    } catch {
       setError('Failed to create account. Please try again.')
     } finally {
       setLoading(false)

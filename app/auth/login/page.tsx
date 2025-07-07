@@ -25,7 +25,7 @@ export default function LoginPage() {
       setTimeout(() => {
         router.push('/dashboard')
       }, 1000)
-    } catch (err) {
+    } catch {
       setError('Invalid email or password')
     } finally {
       setLoading(false)
