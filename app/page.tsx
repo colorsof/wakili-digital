@@ -155,7 +155,7 @@ export default function LandingPage() {
                 <Zap className="w-8 h-8 text-blue-900" />
               </div>
               <h4 className="text-xl font-semibold mb-2">Lightning Fast</h4>
-              <p className="text-gray-600">Optimized for Kenya's internet speeds</p>
+              <p className="text-gray-600">Optimized for Kenya&apos;s internet speeds</p>
             </div>
           </div>
         </div>
