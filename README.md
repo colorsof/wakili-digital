@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wakili Digital - Professional Websites for Kenyan Professionals
 
-## Getting Started
+A multi-tenant SaaS platform that helps lawyers, doctors, dentists, and other professionals in Kenya get online quickly with professional websites.
 
-First, run the development server:
+## 🚀 Quick Deploy to Vercel
 
+### Step 1: Push to GitHub
+
+1. Create a new repository on GitHub:
+   - Go to https://github.com/new
+   - Name: `wakili-digital`
+   - Make it public
+   - Don't initialize with README
+
+2. Push your code:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git remote add origin https://github.com/YOUR_USERNAME/wakili-digital.git
+git branch -M main
+git push -u origin main
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2: Deploy to Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Go to https://vercel.com/new
+2. Import your GitHub repository
+3. Click "Deploy"
+4. Your site is live! 🎉
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💼 Business Model
 
-## Learn More
+### Pricing Tiers
+- **Basic**: KES 15,000 setup + KES 2,500/month
+- **Standard**: KES 30,000 setup + KES 5,000/month
+- **Premium**: KES 50,000 setup + KES 7,500/month
 
-To learn more about Next.js, take a look at the following resources:
+### Target Market
+- Lawyers without websites
+- Medical professionals
+- Accountants and consultants
+- Small professional firms
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
+- **Backend**: Supabase (PostgreSQL + Auth)
+- **Hosting**: Vercel
+- **Payments**: M-Pesa (coming soon)
 
-## Deploy on Vercel
+## 📱 Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### For Clients (Professionals)
+- Professional website in minutes
+- Mobile-optimized design
+- Booking system
+- Client portal (Premium)
+- SEO optimized
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### For You (SaaS Owner)
+- Multi-tenant architecture
+- Admin dashboard
+- Automated billing
+- Analytics
+- White-label option
+
+## 🏃‍♂️ Running Locally
+
+```bash
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.local.example .env.local
+# Edit .env.local with your Supabase credentials
+
+# Run development server
+npm run dev
+```
+
+Open http://localhost:3000
+
+## 📈 Revenue Projections
+
+With 100 clients:
+- Monthly Recurring Revenue: KES 437,500 (~$3,000)
+- Annual Revenue: KES 5.25M (~$36,000)
+
+## 🤝 Contributing
+
+This is a commercial project, but we welcome:
+- Bug reports
+- Feature suggestions
+- Documentation improvements
+
+## 📞 Support
+
+- Email: support@wakili.digital
+- Phone: +254 722 000 000
+
+## 📄 License
+
+This is proprietary software. All rights reserved.
+
+---
+
+Built with ❤️ for Kenyan professionals
