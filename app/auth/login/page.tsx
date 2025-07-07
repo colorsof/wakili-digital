@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { ArrowLeft, Mail, Lock, Loader2 } from 'lucide-react'
+import { signInWithEmail, signInWithGoogle } from '@/lib/auth-helpers'
 
 export default function LoginPage() {
   const router = useRouter()
@@ -18,13 +19,13 @@ export default function LoginPage() {
     setLoading(true)
 
     try {
-      // TODO: Implement Supabase auth
-      console.log('Login:', { email, password })
+      const { error } = await signInWithEmail(email, password)
       
-      // For now, simulate login
-      setTimeout(() => {
+      if (error) {
+        setError(error.message)
+      } else {
         router.push('/dashboard')
-      }, 1000)
+      }
     } catch {
       setError('Invalid email or password')
     } finally {
@@ -160,6 +161,12 @@ export default function LoginPage() {
             <div>
               <button
                 type="button"
+                onClick={async () => {
+                  const { error } = await signInWithGoogle()
+                  if (error) {
+                    setError(error.message)
+                  }
+                }}
                 className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-900"
               >
                 <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24">
